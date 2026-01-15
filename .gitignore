@@ -1,0 +1,15 @@
+# Build artifacts
+dist/
+h1b-extension-dist.zip
+
+# Raw data files
+data/LCA_Disclosure_Data_*.csv
+data/LCA_Disclosure_Data_*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

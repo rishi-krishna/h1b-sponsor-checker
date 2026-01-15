@@ -1,0 +1,15 @@
+Short description (max ~132 chars)
+Check if a company sponsored H1B visas this year and see top roles, right in your browser.
+
+Detailed description
+H1B Sponsor Checker helps you quickly verify if a company filed H1B LCAs this year.
+
+Features:
+- Works on any page by detecting the company name.
+- Shows H1B sponsorship status for the current year.
+- Lists top roles associated with recent filings.
+- Uses U.S. Department of Labor LCA disclosure data.
+- Runs fully client-side with offline-ready caching.
+
+Notes:
+- Data reflects DOL LCA disclosure filings (not final USCIS approvals).

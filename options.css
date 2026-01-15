@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  background: #f4f2ee;
+  color: #1f1b16;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: radial-gradient(circle at top, #fdf6ec, #f4f2ee);
+}
+
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+header p {
+  margin: 0;
+  font-size: 13px;
+  color: #5f5347;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #5f5347;
+}
+
+input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d9d2c3;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2e2216;
+  color: #fdf6ec;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #c9b8a2;
+  color: #2e2216;
+}
+
+.status {
+  margin: 0;
+  font-size: 12px;
+  color: #9c4a1f;
+}

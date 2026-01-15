@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H1B Sponsor Checker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>H1B Sponsor Checker</h1>
+        <p>Check if a company sponsored H1B this year.</p>
+      </header>
+
+      <label class="field">
+        <span>Company</span>
+        <input id="companyInput" type="text" placeholder="Paste a company name" />
+      </label>
+
+      <button id="checkButton">Check</button>
+
+      <section id="result" class="result hidden">
+        <h2 id="resultTitle"></h2>
+        <p id="resultMeta"></p>
+        <ul id="rolesList"></ul>
+      </section>
+
+      <p id="status" class="status"></p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

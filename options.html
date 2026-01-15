@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H1B Sponsor Checker Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>H1B Sponsor Checker Settings</h1>
+        <p>Point the extension to your hosted DOL index JSON.</p>
+      </header>
+
+      <label class="field">
+        <span>Data URL</span>
+        <input id="dataUrl" type="url" placeholder="https://your-site/h1b_index.json" />
+      </label>
+
+      <label class="field">
+        <span>Cache hours</span>
+        <input id="cacheHours" type="number" min="1" max="168" />
+      </label>
+
+      <div class="actions">
+        <button id="saveButton">Save</button>
+        <button id="clearCacheButton" class="secondary">Clear cache</button>
+      </div>
+
+      <p id="status" class="status"></p>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>
