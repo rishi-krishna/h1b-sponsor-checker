@@ -68,6 +68,17 @@ function getHostSpecificCompanyElement() {
   return null;
 }
 
+function getCompanyFromHostElement() {
+  const element = getHostSpecificCompanyElement();
+  if (!element) return "";
+  const clone = element.cloneNode(true);
+  const badge = clone.querySelector('[data-h1b-badge="true"]');
+  if (badge) {
+    badge.remove();
+  }
+  return clone.textContent?.trim() || "";
+}
+
 function createBadge(text, color) {
   const badge = document.createElement("span");
   badge.dataset.h1bBadge = "true";
@@ -135,6 +146,11 @@ if (document.readyState === "loading") {
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   if (message?.type !== "GET_COMPANY_CANDIDATE") return;
+  const hostCompany = getCompanyFromHostElement();
+  if (hostCompany) {
+    sendResponse({ company: hostCompany, candidates: [hostCompany] });
+    return;
+  }
   const candidates = extractCompanyCandidates();
   const best = pickBestCandidate(candidates);
   sendResponse({ company: best, candidates });
